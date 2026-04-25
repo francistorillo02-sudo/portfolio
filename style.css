@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.6;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 2rem;
+}
+
+header {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #0f172a;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+/* Projects Grid */
+.projects-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+}
+
+/* Skill Tags */
+.skills-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.header-container {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Space between photo and text */
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: cover;  /* Ensures the photo doesn't look stretched */
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header-text {
+    flex: 1;
+}
+
+/* Responsive adjustment for mobile phones */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
